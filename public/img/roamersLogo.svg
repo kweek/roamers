@@ -1,0 +1,38 @@
+
+
+<svg width="155px" height="44px" viewBox="547 212 155 44" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Futura-44-logo" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(547.000000, 212.000000)">
+        <g transform="translate(-2.000000, -8.000000)">
+            <text id="monthly" transform="translate(6.236719, 27.398131) rotate(-90.000000) translate(-6.236719, -27.398131) " font-family="Futura-Medium, Futura" font-size="9.5" font-weight="400" fill="#FBB406">
+                <tspan x="-12.7072062" y="31.3981312">monthly</tspan>
+            </text>
+            <text id="s" font-family="Futura-Medium, Futura" font-size="44" font-weight="400" fill="#9092A4">
+                <tspan x="138.16822" y="46">s</tspan>
+            </text>
+            <text id="r" font-family="Futura-Medium, Futura" font-size="44" font-weight="400" fill="#9092A4">
+                <tspan x="124.095527" y="46">r</tspan>
+            </text>
+            <text id="e" font-family="Futura-Medium, Futura" font-size="44" font-weight="400" fill="#9092A4">
+                <tspan x="102.986486" y="46">e</tspan>
+            </text>
+            <text id="m" font-family="Futura-Medium, Futura" font-size="44" font-weight="400" fill="#9092A4">
+                <tspan x="72.082013" y="46">m</tspan>
+            </text>
+            <text id="a" font-family="Futura-Medium, Futura" font-size="44" font-weight="400" fill="#9092A4">
+                <tspan x="49.3488622" y="46">a</tspan>
+            </text>
+            <text id="R" font-family="Futura-Medium, Futura" font-size="44" font-weight="400" fill="#9092A4">
+                <tspan x="6.61260867" y="46">R</tspan>
+            </text>
+            <g id="orange-compass" transform="translate(28.508034, 25.000000)" stroke="#FBB406">
+                <ellipse id="outter-circle" stroke-width="0.5" cx="11.2715717" cy="10.8525658" rx="10.1147484" ry="9.83125"></ellipse>
+                <polygon id="left-triangle" stroke-width="0.5" transform="translate(7.237720, 14.775315) rotate(226.000000) translate(-7.237720, -14.775315) " points="7.23771974 9.56995047 11.3684259 19.9806805 3.10701363 19.9806805"></polygon>
+                <ellipse id="inner-compass" cx="11.2730662" cy="11" rx="0.879543336" ry="0.89375"></ellipse>
+                <polygon id="right" stroke-width="0.5" transform="translate(15.223935, 6.928192) rotate(406.000000) translate(-15.223935, -6.928192) " points="15.2239346 1.72282656 19.3546407 12.1335566 11.0932285 12.1335566"></polygon>
+            </g>
+        </g>
+    </g>
+</svg>

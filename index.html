@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="roamers">
+
+<head>
+    <meta charset="utf-8">
+    <title>Monthly Roamers</title>
+
+    <!-- RESET FILE     -->
+    <link rel="stylesheet" href="public/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Open+Sans" rel="stylesheet">
+    <!-- Link to Global app CSS -->
+    <link rel="stylesheet" type="text/css" href="globalStyles.css">
+
+    <!-- links to individual pages css -->
+    <link rel="stylesheet" type="text/css" href="public/howItWorks/hitStyles.css">
+    <link rel="stylesheet" type="text/css" href="public/itinerary/itinStyles.css">
+    <link rel="stylesheet" type="text/css" href="public/apply/applyStyles.css">
+    <link rel="stylesheet" type="text/css" href="public/followUs/followUs.css">
+
+
+</head>
+
+<body>
+    <header class="global-header">
+
+        <!-- <a ui-sref="header-logo"></a> -->
+        <!-- <img src="./public/img/roamersLogo.svg" alt="Roamers Logo"> -->
+        <!-- <img src="./public/img/roamersTwo.svg" alt="Roamers Logo"> -->
+        <!-- white logo -->
+        <img src="./public/img/whiteLogo.svg" alt="Roamers Logo">
+
+        <nav class="main-nav">
+            <a ui-sref="locations">How It Works</a>
+            <a ui-sref="itinerary">Itinerary</a>
+            <a ui-sref="follow">Follow Us</a>
+            <a ui-sref="charity">Make a Difference</a>
+            <button><a ui-sref="apply">Apply</a></button>
+        </nav>
+
+    </header>
+
+    <ui-view></ui-view>
+
+
+
+
+    <!-- Angular and ui-router files -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
+
+    <!-- app.js file -->
+    <script src="./public/app.js"></script>
+    <!-- howItWorks files -->
+    <script src="./public/howItWorks/hitCtrl.js"></script>
+    <script src="./public/howItWorks/hitService.js"></script>
+    <!-- itinerary files -->
+    <script src="./public/itinerary/itinCtrl.js"></script>
+    <script src="./public/itinerary/itinService.js"></script>
+    <!-- follow us files-->
+    <script src="./public/followUs/followUsCtrl.js"></script>
+    <script src="./public/followUs/followUsService.js"></script>
+    <!-- apply files -->
+    <script src="./public/apply/applyCtrl.js"></script>
+    <script src="./public/apply/applyService.js"></script>
+    <!-- home files -->
+    <script src="./public/home/homeCtrl.js"></script>
+    <script src="./public/home/homeService.js"></script>
+
+
+
+</body>
+
+</html>
