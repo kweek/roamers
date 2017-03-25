@@ -21,9 +21,14 @@ angular.module('roamers', ['ui.router'])
             controller: 'followUsCtrl',
           })
           .state('apply', {
-            url: 'apply',
+            url: '/apply',
             templateUrl: './public/apply/apply.html',
             controller: 'applyCtrl',
+          })
+          .state('charity', {
+            url: '/charity',
+            templateUrl: './public/makeADifference/charity.html',
+            controller: 'charityCtrl',
           })
 
   });
