@@ -1,0 +1,85 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  height: 100%;
+  width: 100%;
+}
+/*h1 {
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  color: #646571;
+}*/
+.top-container {
+  width: 100%;
+}
+
+.background {
+  width: 100%;
+  height: 500px;
+  background-image: url('/public/img/smallerthailand.png');
+  background-size: cover;
+}
+.home-pic-text {
+  font-size: 54px;
+  color: #646571;
+  text-align: center;
+}
+.intro-container {
+  /*background-color: #efefef;*/
+}
+.intro-header {
+  font-size: 35px;
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  color: #4caeff;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+/*Distinct line above and below intro-header */
+.line-style {
+  height: 20px;
+	border: 0;
+	box-shadow: 0 20px 20px -20px #8c8b8b inset;
+  margin: 0;
+  color: #646571;
+}
+.ls-margin {
+  margin: 0 250px;
+}
+.font-p {
+  color: #646571;
+  text-align: center;
+  font-family: sans-serif;
+  margin: 0 30px;
+  margin-bottom: 40px;
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 2;
+}
+.our-mission-container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+}
+.mission {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  width: 33.3%;
+  padding: 20px;
+  color: #646571;
+  font-size: 20px;
+  font-weight: 100;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+.mission-header {
+  color: #4caeff;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
