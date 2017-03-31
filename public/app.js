@@ -4,6 +4,7 @@ angular.module('roamers', ['ui.router'])
           .state('home', {
             url: '/',
             templateUrl: './public/home/home.html',
+            controller: 'homeCtrl',
           })
           .state('howItWorks', {
             url: '/howItWorks',

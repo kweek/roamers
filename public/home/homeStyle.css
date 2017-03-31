@@ -27,15 +27,21 @@ body {
 .intro-container {
   /*background-color: #efefef;*/
 }
+
 .intro-header {
   font-size: 35px;
   font-family: 'Montserrat', 'Open Sans', sans-serif;
-  color: #4caeff;
-  text-transform: uppercase;
+  color: #FBB406;
+  /*text-transform: uppercase;*/
   text-align: center;
   padding-top: 20px;
   padding-bottom: 10px;
 }
+.bold-lds {
+  font-weight: bold;
+}
+
+
 /*Distinct line above and below intro-header */
 .line-style {
   height: 20px;
@@ -47,15 +53,17 @@ body {
 .ls-margin {
   margin: 0 250px;
 }
+
 .font-p {
   color: #646571;
   text-align: center;
   font-family: sans-serif;
-  margin: 0 30px;
+  margin: 0 40px;
   margin-bottom: 40px;
   font-size: 20px;
   font-weight: 100;
   line-height: 2;
+  /*text-align: justify;*/
 }
 .our-mission-container {
   padding-left: 15px;
@@ -65,21 +73,154 @@ body {
   display: flex;
 }
 .mission {
-  margin-top: 50px;
+  margin-top: 30px;
   margin-bottom: 50px;
   padding-top: 1em;
   padding-bottom: 1em;
   width: 33.3%;
   padding: 20px;
   color: #646571;
-  font-size: 20px;
-  font-weight: 100;
-  font-family: sans-serif;
-  line-height: 1.5;
 }
 .mission-header {
   color: #4caeff;
   font-size: 24px;
   font-weight: 400;
   text-align: center;
+}
+.mission-p:before {
+  display: block;
+  content: " ";
+  background-image: url();
+  width: 80px;
+  height: 80px;
+  /*background-position: -311px -100px;*/
+  margin: 0 auto 27px auto;
+}
+.mission-p {
+  font-size: 18px;
+  font-weight: 100;
+  font-family: sans-serif;
+  line-height: 1.5;
+  text-align: justify;
+}
+.adventure::before {
+  margin-top: 20px;
+  width: 100%;
+  height: 195px;
+  background-image: url('/public/img/exsmallElephant.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.culture::before {
+  margin-top: 20px;
+  width: 100%;
+  height: 195px;
+  background-image: url('/public/img/cultureThailand.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.service::before {
+  margin-top: 20px;
+  width: 100%;
+  height: 195px;
+  background-image: url('/public/img/service.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*come join us for a month container*/
+.jh-text {
+  font-size: 25px;
+  font-family: 'Montserrat', 'Open Sans', sans-serif;
+  color: #FBB406;
+  /*text-transform: uppercase;*/
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+.join-text {
+  font-size: 18px;
+  margin: 0 100px;
+}
+
+.join-button {
+  background-color: transparent;
+  border: 2px solid #242526;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+.join-apply {
+  background-color: #242526;
+  padding: 16px;
+  padding-left: 40px;
+  padding-right: 40px;
+}
+.join-apply:hover{
+  border: 2px solid #646571;
+  background-color: #646571;
+}
+.join-how {
+  color: #242526;
+  padding: 16px;
+}
+.join-how:hover {
+  color: white;
+  background-color: #242526;
+}
+.button-a-h {
+  display: flex;
+  justify-content: center;
+}
+.button-join {
+  margin-left: 80px;
+}
+/*email container*/
+.email-container {
+  margin-top: 40px;
+  background-color: #646571;
+  padding: 50px;
+  text-align: center;
+}
+.create-input {
+  margin-bottom: 30px;
+}
+.submit-email {
+  margin-top: ;
+  background-color: #FBB406;
+  color: #646571;
+  border: 2px solid #fff;
+  padding: 9px;
+  border-radius: 0px;
+}
+.input-box {
+  height: 40px;
+  border: 2px solid #fff;
+  font-size: 16px;
+}
+.updates {
+  color: #4caeff;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+.updates-wording {
+  color: #fff;
+  margin-bottom: 30px;
+}
+.social-container {
+  background-color: #242526;
+  color: #fff;
+}
+.social-links {
+  padding: 30px;
+  text-align: center;
+  font-size: 40px;
+}
+.fa {
+  margin: 15px;
+}
+.copyright {
+  margin-top: 20px;
+  font-size: 14px;
 }

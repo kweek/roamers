@@ -10,7 +10,9 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Open+Sans" rel="stylesheet">
     <!-- <link href="https://fonts.googleapis.com/css?family=Didact+Gothic|Open+Sans" rel="stylesheet"> -->
     <!-- Link to Global app CSS -->
+
     <link rel="stylesheet" type="text/css" href="globalStyles.css">
+
 
     <!-- links to individual pages css -->
     <link rel="stylesheet" type="text/css" href="public/home/homeStyle.css">
@@ -37,16 +39,40 @@
             <a ui-sref="itinerary" class="nav-links">Itinerary</a>
             <a ui-sref="followUs" class="nav-links">Follow Us</a>
             <a ui-sref="charity" class="nav-links">Make a Difference</a>
-            <button class="nav-apply"><a ui-sref="apply" class="nav-links">Apply</a></button>
+            <button class="nav-apply"><a ui-sref="apply" class="nav-links app-button">Apply Now</a></button>
         </nav>
 
     </header>
 
+
     <ui-view></ui-view>
 
+    <!-- the styling for this footer is homeStyle.css -->
+  
+    <footer class="global-footer">
+      <div class="email-container">
+          <p class="jh-text updates">Get Updates</p>
+          <p class="join-text updates-wording">Sign up for updates on new locations or for more information</p>
+          <form ng-submit="createPerson(newPerson)" class="create-input">
+              <input type="text" placeholder="First" class="input-box" ng-model="newPerson"></input>
+              <input type="text" placeholder="Last" class="input-box" ng-model="newPerson"></input>
+              <input type="text" placeholder="Email" class="input-box" ng-model="newPerson"></input>
+              <!-- <br class="submit-margin"> -->
+              <input type="submit" value="Submit" class="join-button submit-email"></input>
+          </form>
+      </div>
+      <div class="social-container">
+          <div class="social-links">
+              <a href=""><i class="fa fa-facebook" aria-hidden="true"></i></a>
+              <a href=""><i class="fa fa-envelope-o" aria-hidden="true"></i></a>
+              <a href="https://www.instagram.com/monthlyroamer/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <p class="copyright"> Copyright 2017 Monthly Roamer, LLC</p>
+          </div>
+      </div>
+    </footer>
 
 
-
+    <script src="https://use.fontawesome.com/99cc7ac06e.js"></script>
     <!-- Angular and ui-router files -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.7/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.15/angular-ui-router.js"></script>
