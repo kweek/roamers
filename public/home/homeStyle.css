@@ -23,7 +23,16 @@ body {
   font-size: 54px;
   color: #646571;
   text-align: center;
+  padding: 100px;
 }
+.home-header-text {
+  /*font: bold 'Open Sans';*/
+  padding: 15px;
+  color: #646571;
+  text-shadow: 1px 1px #fff;
+  font-weight: 600;
+}
+
 .intro-container {
   /*background-color: #efefef;*/
 }
@@ -160,6 +169,11 @@ body {
   border: 2px solid #646571;
   background-color: #646571;
 }
+.apply-h {
+  background-color: #646571;
+  border: 2px solid #646571;
+}
+
 .join-how {
   color: #242526;
   padding: 16px;
