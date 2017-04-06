@@ -54,13 +54,15 @@ body {
 /*Distinct line above and below intro-header */
 .line-style {
   height: 20px;
+  width: 100%;
 	border: 0;
 	box-shadow: 0 20px 20px -20px #8c8b8b inset;
   margin: 0;
   color: #646571;
 }
 .ls-margin {
-  margin: 0 250px;
+  margin-left: 250px;
+  margin-right: 250px;
 }
 
 .font-p {
@@ -208,6 +210,11 @@ body {
   border-radius: 0px;
 }
 .input-box {
+  height: 40px;
+  border: 2px solid #fff;
+  font-size: 16px;
+}
+.input-box-foot {
   height: 40px;
   border: 2px solid #fff;
   font-size: 16px;

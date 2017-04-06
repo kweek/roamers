@@ -26,8 +26,8 @@ angular.module('roamers', ['ui.router'])
             templateUrl: './public/apply/apply.html',
             controller: 'applyCtrl',
           })
-          .state('charity', {
-            url: '/charity',
+          .state('faq', {
+            url: '/faq',
             templateUrl: './public/makeADifference/charity.html',
             controller: 'charityCtrl',
           })

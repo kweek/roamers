@@ -38,7 +38,7 @@
             <a ui-sref="howItWorks" class="nav-links">How It Works</a>
             <a ui-sref="itinerary" class="nav-links">Itinerary</a>
             <a ui-sref="followUs" class="nav-links">Follow Us</a>
-            <a ui-sref="charity" class="nav-links">Make a Difference</a>
+            <a ui-sref="faq" class="nav-links">FAQ</a>
             <button class="nav-apply"><a ui-sref="apply" class="nav-links app-button">Apply Now</a></button>
         </nav>
 
@@ -48,15 +48,15 @@
     <ui-view></ui-view>
 
     <!-- the styling for this footer is homeStyle.css -->
-  
+
     <footer class="global-footer">
       <div class="email-container">
           <p class="jh-text updates">Get Updates</p>
           <p class="join-text updates-wording">Sign up for updates on new locations or for more information</p>
           <form ng-submit="createPerson(newPerson)" class="create-input">
-              <input type="text" placeholder="First" class="input-box" ng-model="newPerson"></input>
-              <input type="text" placeholder="Last" class="input-box" ng-model="newPerson"></input>
-              <input type="text" placeholder="Email" class="input-box" ng-model="newPerson"></input>
+              <input type="text" placeholder="First" class="input-box-foot " ng-model="newPerson"></input>
+              <input type="text" placeholder="Last" class="input-box-foot" ng-model="newPerson"></input>
+              <input type="text" placeholder="Email" class="input-box-foot" ng-model="newPerson"></input>
               <!-- <br class="submit-margin"> -->
               <input type="submit" value="Submit" class="join-button submit-email"></input>
           </form>

@@ -18,6 +18,8 @@
   margin-top: 30px;
   line-height: 1.5;
   padding: 0 60px;
+  margin-left: 100px;
+  margin-right: 100px;
 }
 .application {
   color: #646571;
@@ -31,12 +33,12 @@
 }
 
 .title-included {
-  margin-top: 50px;
+  margin-top: 70px;
   font-size: 35px;
   padding: 20px;
   font-weight: bold;
   color: #646571;
-  text-decoration: underline;
+  /*text-decoration: underline;*/
   text-align: center;
   margin-bottom: 30px;
 }

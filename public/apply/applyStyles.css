@@ -2,3 +2,71 @@ h1 {
   font-family: 'Montserrat', 'Open Sans', sans-serif;
   color: #646571;
 }
+.apply-container {
+  margin-left: 100px;
+  margin-right: 60px;
+}
+.updated-wording {
+  color: #646571;
+  padding-bottom: 30px;
+  text-align: center;
+  margin: 0 200px;
+}
+.input-box {
+  border: 1px solid #bfc0c1;
+  width: 400px;
+}
+.app-info {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-family: 'Open Sans';
+  color: #646571;
+  font-weight: bold;
+}
+.wording {
+  margin-left: 240px;
+}
+.wording-two{
+  margin-left: 275px;
+}
+.required {
+  padding-left: 5px;
+}
+.birth-input {
+  height: 40px;
+  border: 2px solid #bfc0c1;
+  font-size: 16px;
+  width: 80px;
+}
+
+.radio-btn {
+  color: #646571;
+  font-weight: 600;
+  font-family: 'Open Sans';
+  font-size: 16px;
+}
+.location-input {
+  height: 40px;
+  border: 2px solid #bfc0c1;
+  font-size: 16px;
+  width: 120px;
+}
+
+.submit-form {
+  margin-top: 20px;
+  background-color: #646571;
+  border: 2px solid #646571;
+  border-radius: 25px;
+  text-transform: uppercase;
+  font-size: 16px;
+  padding: 15px;
+  color: #fff;
+}
+.submit-form:hover {
+  background-color: #4caeff;
+  border: 2px solid #4caeff;
+}
+.bottom-comment {
+  margin-top: 50px;
+  font-size: 24px;
+}
