@@ -88,16 +88,16 @@
   background-position: right;
 }
 .acc-pic {
-  background-image: url('/public/img/privateroom.jpeg');
+  background-image: url('/img/privateroom.jpeg');
 }
 .work-pic {
-  background-image: url('/public/img/smallworkspace.jpeg');
+  background-image: url('/img/smallworkspace.jpeg');
 }
 .event-pic {
-  background-image: url('/public/img/eventpic.jpeg');
+  background-image: url('/img/eventpic.jpeg');
 }
 .transport-pic {
-  background-image: url('/public/img/funcab.jpeg');
+  background-image: url('/img/funcab.jpeg');
 }
 hr {
   width: 90%;
