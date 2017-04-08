@@ -28,8 +28,8 @@ angular.module('roamers', ['ui.router'])
           })
           .state('faq', {
             url: '/faq',
-            templateUrl: './makeADifference/charity.html',
-            controller: 'charityCtrl',
+            templateUrl: './faq/faq.html',
+            controller: 'faqCtrl',
           })
 
   });

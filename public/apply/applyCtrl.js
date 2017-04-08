@@ -6,7 +6,6 @@ angular.module('roamers')
   $scope.applicant = function(newApplicant){
     console.log(newApplicant);
     applyService.applicant(newApplicant);
-
   }
 
 

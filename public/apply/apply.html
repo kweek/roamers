@@ -15,9 +15,7 @@
         </div>
         <div class="birth-date">
           <p class="app-info">Birthdate<span class="required">*</span></p>
-          <input type="text" placeholder="MM" class="birth-input" ng-model="newApplicant.month"></input>
-          <input type="text" placeholder="DD" class="birth-input" ng-model="newApplicant.day"></input>
-          <input type="text" placeholder="YR" class="birth-input" ng-model="newApplicant.year"></input>
+          <input type="date" placeholder="MM/DD/YEAR" class="birth-input" ng-model="newApplicant.birthdate"></input>
         </div>
         <div class="radio-btn">
           <p class="app-info">Gender<span class="required">*</span></p>
@@ -59,10 +57,10 @@
         </div>
         <div class="radio-btn">
           <p class="app-info">How did you hear about us?<span class="required">*</span></p>
-          <input type="radio" name="word" value="Yes" ng-model="newApplicant.heard"checked> Instagram
-          <input type="radio" name="word" value="No" ng-model="newApplicant.heard"> Facebook
-          <input type="radio" name="word" value="No" ng-model="newApplicant.heard"> Friend
-          <input type="radio" name="word" value="No" ng-model="newApplicant.heard"> Mutual App
+          <input type="radio" name="word" value="Instagram" ng-model="newApplicant.heard"checked> Instagram
+          <input type="radio" name="word" value="Facebook" ng-model="newApplicant.heard"> Facebook
+          <input type="radio" name="word" value="Friend" ng-model="newApplicant.heard"> Friend
+          <input type="radio" name="word" value="MutualApp" ng-model="newApplicant.heard"> Mutual App
         </div>
         <br>
           <input type="submit" value="Submit Application" class="join-button submit-form"></input>

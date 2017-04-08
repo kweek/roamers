@@ -17,7 +17,7 @@ module.exports = {
       job: req.body.job,
       skype: req.body.skype,
       linkedin: req.body.linkedin,
-      instagram: req.body.instagam,
+      instagram: req.body.instagram,
       destination: req.body.destination,
       heard: req.body.heard,
     }, function(dbError, dbResponse){
