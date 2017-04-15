@@ -12,42 +12,42 @@
     <form ng-submit="applicant(newApplicant)" class="apply-form">
         <div class="name">
           <p class="app-info">Name<span class="required">*</span></p>
-          <input type="text" placeholder="First Name" class="input-box" ng-model="newApplicant.first_name"></input>
-          <input type="text" placeholder="Last Name" class="input-box" ng-model="newApplicant.last_name"></input>
+          <input type="text" placeholder="First Name" class="input-box" ng-model="newApplicant.first_name" required></input>
+          <input type="text" placeholder="Last Name" class="input-box" ng-model="newApplicant.last_name" required></input>
         </div>
         <div class="email">
             <p class="app-info">Email<span class="required">*</span></p>
-          <input type="email" placeholder="Email" class="input-box" ng-model="newApplicant.email"></input>
+          <input type="email" name="email" required placeholder="Email" class="input-box" ng-model="newApplicant.email"></input>
         </div>
         <div class="birth-date">
           <p class="app-info">Birthdate<span class="required">*</span></p>
-          <input type="date" placeholder="MM/DD/YEAR" class="birth-input" ng-model="newApplicant.birthdate"></input>
+          <input type="date" placeholder="MM/DD/YEAR" class="birth-input" ng-model="newApplicant.birthdate" required></input>
         </div>
         <div class="radio-btn">
           <p class="app-info">Gender<span class="required">*</span></p>
-          <input type="radio" name="sex" value="male" ng-model="newApplicant.gender" checked> Male
-          <input type="radio" name="sex" value="female" ng-model="newApplicant.gender"> Female
+          <input type="radio" name="sex" value="male" ng-model="newApplicant.gender" checked required> Male
+          <input type="radio" name="sex" value="female" ng-model="newApplicant.gender" required> Female
         </div>
         <div class="location">
           <p class="app-info">Current Location<span class="required">*</span></p>
-          <input type="text" placeholder="City" class="location-input" ng-model="newApplicant.city"></input>
-          <input type="text" placeholder="State/Province" class="location-input" ng-model="newApplicant.state"></input>
-          <input type="text" placeholder="Country" class="location-input" ng-model="newApplicant.country"></input>
+          <input type="text" placeholder="City" class="location-input" ng-model="newApplicant.city" required></input>
+          <input type="text" placeholder="State/Province" class="location-input" ng-model="newApplicant.state" required></input>
+          <input type="text" placeholder="Country" class="location-input" ng-model="newApplicant.country" required></input>
         </div>
         <div class="radio-btn">
           <p class="app-info">Does your job allow you to work remotely?<span class="required">*</span></p>
-          <input type="radio" name="remote" value="Yes" ng-model="newApplicant.remote" checked> Yes
-          <input type="radio" name="remote" value="No" ng-model="newApplicant.remote"> No
+          <input type="radio" name="remote" value="Yes" ng-model="newApplicant.remote" checked required> Yes
+          <input type="radio" name="remote" value="No" ng-model="newApplicant.remote" required> No
         </div>
         <div class="job-title">
-            <p class="app-info">Job Title & Company<span class="required">*</span><span class="wording">Skype Username</span><span class="required">*</span></p>
-          <input type="text" placeholder="ex: writer, monthly roamers" class="input-box" ng-model="newApplicant.job"></input>
+            <p class="app-info">Job Title & Company<span class="required">*</span><span class="wording">Skype Username</span></p>
+          <input type="text" placeholder="ex: writer, monthly roamers" class="input-box" ng-model="newApplicant.job" required></input>
           <input type="text" placeholder="For interview" class="input-box" ng-model="newApplicant.skype"></input>
         </div>
         <div class="linkedin">
             <p class="app-info">Linkedin Profile<span class="required">*</span><span class="wording-two">Instagram Profile</span><span class="required">*</span></p>
-          <input type="text" placeholder="http://" class="input-box" ng-model="newApplicant.linkedin"></input>
-          <input type="text" placeholder="http://" class="input-box" ng-model="newApplicant.instagram"></input>
+          <input type="url" placeholder="http://" class="input-box" ng-model="newApplicant.linkedin" required></input>
+          <input type="url" placeholder="http://" class="input-box" ng-model="newApplicant.instagram" required></input>
         </div>
         <!-- <div class="social">
             <p class="app-info">Instagram Profile<span class="required">*</span></p>
@@ -59,14 +59,19 @@
         </div> -->
         <div class="where">
             <p class="app-info">Where else would you like to go?<span class="required">*</span></p>
-          <input type="text" placeholder="Italy, Bali, etc." class="input-box" ng-model="newApplicant.destination"></input>
+          <input type="text" placeholder="Italy, Bali, etc." class="input-box" ng-model="newApplicant.destination" required></input>
         </div>
         <div class="radio-btn">
           <p class="app-info">How did you hear about us?<span class="required">*</span></p>
-          <input type="radio" name="word" value="Instagram" ng-model="newApplicant.heard"checked> Instagram
-          <input type="radio" name="word" value="Facebook" ng-model="newApplicant.heard"> Facebook
-          <input type="radio" name="word" value="Friend" ng-model="newApplicant.heard"> Friend
-          <input type="radio" name="word" value="MutualApp" ng-model="newApplicant.heard"> Mutual App
+          <input type="radio" name="word" value="Instagram" ng-model="newApplicant.heard"checked required> Instagram
+          <input type="radio" name="word" value="Facebook" ng-model="newApplicant.heard" required> Facebook
+          <input type="radio" name="word" value="Friend" ng-model="newApplicant.heard" required> Friend
+          <input type="radio" name="word" value="MutualApp" ng-model="newApplicant.heard" required> Mutual App
+        </div>
+        <div class="radio-btn">
+          <p class="app-info">Are you LDS?<span class="required">*</span></p>
+          <input type="radio" name="lds" value="Yes" ng-model="newApplicant.lds" checked required> Yes
+          <input type="radio" name="lds" value="No" ng-model="newApplicant.lds" required> No
         </div>
         <br>
           <input type="submit" value="Submit Application" class="join-button submit-form"></input>

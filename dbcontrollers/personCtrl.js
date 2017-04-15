@@ -21,14 +21,15 @@ module.exports = {
       instagram: req.body.instagram,
       destination: req.body.destination,
       heard: req.body.heard,
+      lds: req.body.lds,
     }, function(dbError, dbResponse){
         if(dbError){
           console.log(dbError);
           return res.status(500).send('Internal Server Error');
         }
         var mailOptions = {
-          from: '"Monthly Roamers" <monthlyroamers@gmail.com>', // sender address
-          to: req.body.newemail,
+          from: '"Monthly Roamers " <monthlyroamers@gmail.com>', // sender address
+          to: req.body.email,
           bcc: 'monthlyroamers@gmail.com',// list of receivers
           subject: 'Your application has been submitted!', // Subject line
           text: `Thank you ${req.body.first_name} for applying to Monthly Roamers. We will contact you once we have reviewed your application. `, // plain text body
