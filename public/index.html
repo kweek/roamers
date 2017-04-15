@@ -25,7 +25,7 @@
 
 </head>
 
-<body>
+<body ng-controller="mainCtrl">
     <header class="global-header">
 
         <!-- <a ui-sref="header-logo"></a> -->
@@ -34,14 +34,9 @@
         <!-- white logo -->
 
 
-        <nav class="main-nav">
-            <a ui-sref="home"><img src="./img/whiteLogo.svg" alt="Roamers Logo"></a>
-            <a ui-sref="howItWorks" class="nav-links">How It Works</a>
-            <a ui-sref="itinerary" class="nav-links">Itinerary</a>
-            <a ui-sref="followUs" class="nav-links">Follow Us</a>
-            <a ui-sref="faq" class="nav-links">FAQ</a>
-            <button class="nav-apply"><a ui-sref="apply" class="nav-links app-button">Apply Now</a></button>
-        </nav>
+        <div class="main-nav" ng-controller="headerCtrl">
+          <div class="back-gradient" ng-include="templateUrl"></div>
+        </div>
 
     </header>
 
@@ -55,9 +50,9 @@
           <p class="jh-text updates">Get Updates</p>
           <p class="join-text updates-wording">Sign up for updates on new locations or for more information</p>
           <form ng-submit="createPerson(newPerson)" class="create-input">
-              <input type="text" placeholder="First" class="input-box-foot " ng-model="newPerson"></input>
-              <input type="text" placeholder="Last" class="input-box-foot" ng-model="newPerson"></input>
-              <input type="text" placeholder="Email" class="input-box-foot" ng-model="newPerson"></input>
+              <input type="text" placeholder="First" class="input-box-foot " ng-model="newPerson.firstname"></input>
+              <input type="text" placeholder="Last" class="input-box-foot" ng-model="newPerson.lastname"></input>
+              <input type="text" placeholder="Email" class="input-box-foot" ng-model="newPerson.newemail"></input>
               <!-- <br class="submit-margin"> -->
               <input type="submit" value="Submit" class="join-button submit-email"></input>
           </form>
@@ -98,6 +93,8 @@
     <!-- faq files -->
     <script src="./faq/faqCtrl.js"></script>
     <script src="./faq/faqService.js"></script>
+
+    <script src="./headerCtrl.js"></script>
 
 
 </body>

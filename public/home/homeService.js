@@ -1,8 +1,8 @@
 angular.module('roamers')
-.service('homeService', function(){
+.service('homeService', function($http){
 
   this.createPerson = function(newPerson){
-    return $http.post('path...', newPerson)
+    return $http.post('/api/emailSignup', newPerson);
   }
 
 });

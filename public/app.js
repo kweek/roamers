@@ -32,4 +32,13 @@ angular.module('roamers', ['ui.router'])
             controller: 'faqCtrl',
           })
 
-  });
+
+  })
+  .controller('mainCtrl', function($scope, homeService){
+    $scope.createPerson = function(newPerson){
+      homeService.createPerson(newPerson).then(function(response){
+        console.log(response);
+        $scope.newPerson = {};
+      });
+    };
+  })

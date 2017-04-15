@@ -1,9 +1,10 @@
 var app = require('../server');
 var db = app.get('db');
+var transporter = app.get('transporter');
 
 
 module.exports = {
-  create: function(req, response){
+  create: function(req, res){
     db.applicant.insert({
       first_name: req.body.first_name,
       last_name: req.body.last_name,
@@ -23,10 +24,34 @@ module.exports = {
     }, function(dbError, dbResponse){
         if(dbError){
           console.log(dbError);
-          return response.status(500).send('Internal Server Error');
+          return res.status(500).send('Internal Server Error');
         }
-        return response.status(201).send(dbResponse);
+        var mailOptions = {
+          from: '"Monthly Roamers" <monthlyroamers@gmail.com>', // sender address
+          to: req.body.newemail,
+          bcc: 'monthlyroamers@gmail.com',// list of receivers
+          subject: 'Your application has been submitted!', // Subject line
+          text: `Thank you ${req.body.first_name} for applying to Monthly Roamers. We will contact you once we have reviewed your application. `, // plain text body
+          html: '' // html body
+      };
+      transporter.sendMail(mailOptions, function(error, info){
+        if (error) {
+            console.log(error);
+            return res.status(500).send('Internal servor error');
+        }
+        console.log('Message %s sent: %s', info.messageId, info.response);
+          return res.send(`Message ${info.messageId} sent: ${info.response}`);
+      });
+        // return response.status(201).send(dbResponse);
     });
   }
+  // newPerson: function(req, response){
+  //   transporter.newPerson({
+  //     firstname: req.body.firstname,
+  //     lastname: req.body.lastname,
+  //     email: req.body.email,
+  //   });
+  //   res.json(response);
+  // }
 
-}
+};

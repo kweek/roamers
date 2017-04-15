@@ -1,0 +1,69 @@
+
+/*pricing section below*/
+.pricing-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.pr-title {
+  margin-top: 40px;
+}
+.p-wording {
+  font-size: 25px;
+  color: #fff;
+  text-align: center;
+  margin-top: 10px;
+  /*padding-bottom: 20px;
+  margin-bottom: 10px;*/
+}
+.small-t-wording{
+  font-size: 25px;
+  color: #646571;
+  text-align: center;
+}
+
+.pricing-box {
+  width: 400px;
+  height: 300px;
+  /*background-color: #59E8D9;*/
+  margin: 20px;
+}
+.left-pricing {
+  background-color: #e5e5e5;
+}
+.right-pricing {
+  background-color: #e5e5e5;
+}
+.price-title {
+  padding-top: 10px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #555660;
+  line-height: 1.5;
+  text-align: center;
+}
+
+
+.pt {
+  padding-top: 30px;
+  color: #555660;
+}
+.get-started-container {
+  margin-top: 40px;
+}
+.room-explain {
+  padding-top: 20px;
+  color: #555660;
+  line-height: 1.5;
+  text-align: center;
+  font-size: 20px;
+  padding: 10px;
+  text-align: justify;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.steps-box {
+  border: 2px solid #646571;
+  margin: 20px;
+  height:inherit;
+}

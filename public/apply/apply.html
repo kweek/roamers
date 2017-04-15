@@ -1,8 +1,14 @@
-<!-- <h1>Apply on this awesome page</h1> -->
+<section class="all-contain">
 <hr class="line-style">
+<div class="all-background">
+  <h1 class="how-title">Apply Now</h1>
+  <p class="pricing-info p-wording">*Fill out all the information below</p>
+  <!-- <div class="title-included pr-title">Pricing</div> -->
+</div>
 <div class="apply-container">
-    <p class="jh-text updates">Apply Now</p>
-    <p class="join-text updated-wording">*Fill out all the information below</p>
+
+    <!-- <p class="jh-text updates">Apply Now</p>
+    <p class="join-text updated-wording">*Fill out all the information below</p> -->
     <form ng-submit="applicant(newApplicant)" class="apply-form">
         <div class="name">
           <p class="app-info">Name<span class="required">*</span></p>
@@ -35,8 +41,8 @@
         </div>
         <div class="job-title">
             <p class="app-info">Job Title & Company<span class="required">*</span><span class="wording">Skype Username</span><span class="required">*</span></p>
-          <input type="text" placeholder="" class="input-box" ng-model="newApplicant.job"></input>
-          <input type="text" placeholder="username so we can call for an interview" class="input-box" ng-model="newApplicant.skype"></input>
+          <input type="text" placeholder="ex: writer, monthly roamers" class="input-box" ng-model="newApplicant.job"></input>
+          <input type="text" placeholder="For interview" class="input-box" ng-model="newApplicant.skype"></input>
         </div>
         <div class="linkedin">
             <p class="app-info">Linkedin Profile<span class="required">*</span><span class="wording-two">Instagram Profile</span><span class="required">*</span></p>
@@ -53,7 +59,7 @@
         </div> -->
         <div class="where">
             <p class="app-info">Where else would you like to go?<span class="required">*</span></p>
-          <input type="text" placeholder="List future destinations you are interested in" class="input-box" ng-model="newApplicant.destination"></input>
+          <input type="text" placeholder="Italy, Bali, etc." class="input-box" ng-model="newApplicant.destination"></input>
         </div>
         <div class="radio-btn">
           <p class="app-info">How did you hear about us?<span class="required">*</span></p>
@@ -69,3 +75,4 @@
       <p class="join-text updated-wording bottom-comment">*Once your application is submitted we will review it and contact you to set up an interview.</p>
     </div>
 </div>
+</section>
