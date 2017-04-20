@@ -14,7 +14,7 @@
 .included-faq {
   width: 100%;
   color: #242526;
-  font-family: sans-serif;
+  font-family: 'futura', sans-serif;
   margin: 0 40px;
   /*margin-bottom: 40px;*/
   font-size: 18px;
@@ -31,5 +31,6 @@
   font-weight: bold;
 }
 .answer {
-  font-weight: 300;
+  font-weight: 100;
+  color: #646571;
 }

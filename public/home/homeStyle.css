@@ -140,7 +140,7 @@ body {
   padding: 10px;
 }
 .intro-mission {
-  font-size: 45px;
+  font-size: 40px;
   font-family: 'futura', sans-serif;
   color: #66ECD5;
   /*text-align: cen;*/
@@ -153,9 +153,9 @@ body {
 }
 .font-p-mission{
   color: #646571;
-  font-family: 'futura', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   /*margin-bottom: 40px;*/
-  font-size: 25px;
+  font-size: 20px;
   line-height: 1.5;
   margin-top: 20px;
 }
@@ -205,37 +205,22 @@ body {
 }
 
 
-/*.adventure::before {
-  margin-top: 20px;
-  width: 100%;
-  height: 195px;
-  background-image: url('/img/exsmallElephant.jpeg');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.culture::before {
-  margin-top: 20px;
-  width: 100%;
-  height: 195px;
-  background-image: url('/img/cultureThailand.jpeg');
-  background-repeat: no-repeat;
-  background-position: center;
-}
-.service::before {
-  margin-top: 20px;
-  width: 100%;
-  height: 195px;
-  background-image: url('/img/service.jpeg');
-  background-repeat: no-repeat;
-  background-position: center;
-}*/
 
 /*come join us for a month container*/
 .come-join {
-  margin: 100px;
+  padding: 70px;
   width: 100%;
   height: 400px;
+  text-align: justify;
 }
+.im-head {
+  color: #26C4E3;
+}
+.last {
+    padding-bottom: 10px;
+    font-size: 18px;
+}
+
 
 .jh-text {
   font-size: 25px;
@@ -255,13 +240,13 @@ body {
 
 .join-button {
   background-color: transparent;
-  border: 2px solid #242526;
+  border: 2px solid #26C4E3;
   border-radius: 25px;
   text-transform: uppercase;
   font-size: 16px;
 }
 .join-apply {
-  background-color: #242526;
+  background-color: #26C4E3;
   padding: 16px;
   padding-left: 40px;
   padding-right: 40px;
@@ -282,7 +267,7 @@ body {
 }
 .join-how:hover {
   color: white;
-  background-color: #242526;
+  background-color: #26C4E3;
 }
 .button-a-h {
   display: flex;
@@ -346,3 +331,28 @@ body {
   margin-top: 20px;
   font-size: 14px;
 }
+
+/*.adventure::before {
+  margin-top: 20px;
+  width: 100%;
+  height: 195px;
+  background-image: url('/img/exsmallElephant.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.culture::before {
+  margin-top: 20px;
+  width: 100%;
+  height: 195px;
+  background-image: url('/img/cultureThailand.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.service::before {
+  margin-top: 20px;
+  width: 100%;
+  height: 195px;
+  background-image: url('/img/service.jpeg');
+  background-repeat: no-repeat;
+  background-position: center;
+}*/
