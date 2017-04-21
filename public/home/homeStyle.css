@@ -83,7 +83,7 @@ body {
 
 .font-p {
   color: #646571;
-  text-align: center;
+  text-align: justify;
   font-family: 'futura', sans-serif;
   margin: 0 40px;
   margin-bottom: 40px;
@@ -125,7 +125,6 @@ body {
 
 .surf {
   background-image: url('/img/raombeach.png');
-
 }
 .people {
   background-image: url('/img/combined-person.png');
@@ -153,7 +152,7 @@ body {
 }
 .font-p-mission{
   color: #646571;
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'futura', 'Open Sans', sans-serif;
   /*margin-bottom: 40px;*/
   font-size: 20px;
   line-height: 1.5;
